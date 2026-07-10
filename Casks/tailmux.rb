@@ -1,8 +1,8 @@
 # This file is updated by the release workflow of CQ-Fabrication/tailmux.
 # Manual edits will be overwritten on the next release.
 cask "tailmux" do
-  version "0.0.7"
-  sha256 "dc6cbd889b44a6ff318b7f6e445ed483dfb3d95965df333da449105340857dcd"
+  version "0.1.0"
+  sha256 "4078f7ed01356ab22f8e2caab968ce3e1cf3c003d0d3c74a5bfcdd6c5791fdbd"
 
   url "https://assets.tailmux.app/TailMux-#{version}-macos-universal.dmg"
   name "TailMux"
