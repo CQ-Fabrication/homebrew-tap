@@ -10,7 +10,6 @@ cask "tailmux" do
   homepage "https://tailmux.app"
 
   auto_updates true
-  conflicts_with formula: "cq-fabrication/tap/tailmux"
   depends_on macos: ">= :sonoma"
 
   app "TailMux.app"

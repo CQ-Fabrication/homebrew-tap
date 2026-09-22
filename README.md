@@ -23,3 +23,9 @@ brew install cq-fabrication/tap/tailmux
 Binaries are downloaded from `assets.tailmux.app` — the same signed,
 checksummed artifacts behind the app's Sparkle update feed. This tap is
 updated automatically by the TailMux release pipeline.
+
+## Issues
+
+Problems with the formula or the cask (install errors, outdated versions,
+Homebrew syntax changes) can be reported in this repository's
+[issue tracker](https://github.com/CQ-Fabrication/homebrew-tap/issues).
