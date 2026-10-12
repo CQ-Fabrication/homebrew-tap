@@ -5,20 +5,20 @@
 class Tailmux < Formula
   desc "Run multiple isolated Tailscale tailnets at once, routed by hostname suffix"
   homepage "https://tailmux.app"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://assets.tailmux.app/tailmux_0.2.0_darwin_amd64.tar.gz"
-      sha256 "deb6ae1675821204b7bd931c6ad86819aa7c871c8b34aacd919d650b28ef4fa0"
+      url "https://assets.tailmux.app/tailmux_0.3.0_darwin_amd64.tar.gz"
+      sha256 "c13498ef6a9678bd73dc81c7fbe2acdc4e63e4ee796db00fe8c2802f9fecc8a3"
 
       define_method(:install) do
         bin.install "tailmux"
       end
     end
     if Hardware::CPU.arm?
-      url "https://assets.tailmux.app/tailmux_0.2.0_darwin_arm64.tar.gz"
-      sha256 "c09f898d51aecbc372ca8ff54ebab0177805310d5cf731d2819bb5b8a2c1e3eb"
+      url "https://assets.tailmux.app/tailmux_0.3.0_darwin_arm64.tar.gz"
+      sha256 "4ee1d300486f7ed941fab76a4709a223ad5ec1efc866d4a7eb780d1b020104fa"
 
       define_method(:install) do
         bin.install "tailmux"
@@ -28,15 +28,15 @@ class Tailmux < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://assets.tailmux.app/tailmux_0.2.0_linux_amd64.tar.gz"
-      sha256 "17e9461936e2afa08f8992325105784c38b444f856ede8d00c54a2f4800f6b94"
+      url "https://assets.tailmux.app/tailmux_0.3.0_linux_amd64.tar.gz"
+      sha256 "84225e247fcdd8fef1985f1e130daf02bc2a8031254a9318a2aaa357033e42d8"
       define_method(:install) do
         bin.install "tailmux"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://assets.tailmux.app/tailmux_0.2.0_linux_arm64.tar.gz"
-      sha256 "916c96efa66b48186981a5933f741807a0ab4bcc7e74e2fec8ee73c07704693d"
+      url "https://assets.tailmux.app/tailmux_0.3.0_linux_arm64.tar.gz"
+      sha256 "96e4fff3cef1279e77dd49348cf07abf5b89fed26b575719e50abff97b4bd758"
       define_method(:install) do
         bin.install "tailmux"
       end
