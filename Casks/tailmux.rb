@@ -1,8 +1,8 @@
 # This file is updated by the release workflow of CQ-Fabrication/tailmux.
 # Manual edits will be overwritten on the next release.
 cask "tailmux" do
-  version "0.2.0"
-  sha256 "caf6cc2a9bcb5c1bd7d912b9a664b6605b6b2b86ba97d161031cf4ff478c4666"
+  version "0.3.0"
+  sha256 "5244c620f7e1236d276e272af6db97943f4e6c288c011064b2773930fdc5b12a"
 
   url "https://assets.tailmux.app/TailMux-#{version}-macos-universal.dmg"
   name "TailMux"
@@ -10,6 +10,10 @@ cask "tailmux" do
   homepage "https://tailmux.app"
 
   auto_updates true
+  # No conflicts_with formula: here. Homebrew deprecated the key in 4.6.7,
+  # disabled it in 5.0.0 and removed it in 5.1.0 with no replacement; casks may
+  # only declare conflicts with other casks. The overlap with the CLI formula
+  # (both provide bin/tailmux) is still caught by the binary artifact install.
   depends_on macos: ">= :sonoma"
 
   app "TailMux.app"
